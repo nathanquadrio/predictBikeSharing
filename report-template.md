@@ -1,9 +1,9 @@
 # Report: Predict Bike Sharing Demand with AutoGluon Solution
-#### NAME HERE
+#### Nathan Quadrio
 
 ## Initial Training
 ### What did you realize when you tried to submit your predictions? What changes were needed to the output of the predictor to submit your results?
-TODO: Add your explanation
+Before submission, I verified the predictions using predictions.head() and confirmed that there were no negative values. As a result, no adjustments were needed to the output. Each submission successfully received a score from Kaggle.
 
 ### What was the top ranked model that performed?
 TODO: Add your explanation
