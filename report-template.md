@@ -23,11 +23,11 @@ After hyperparameter tuning (using Bayesian Optimization and longer training), t
 If given more time, I’d focus primarily on deeper feature engineering, particularly exploring interactions between features (e.g., combinations of weather and hour, holiday indicators, and finer-grained seasonal trends). Additionally, I would further invest in advanced hyperparameter optimization for individual models and experiment more extensively with sophisticated ensemble techniques, such as stacking or blending with diverse base models, to squeeze out additional predictive performance.
 
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
-|model|hpo1|hpo2|hpo3|score|
-|--|--|--|--|--|
-|initial|?|?|?|?|
-|add_features|?|?|?|?|
-|hpo|?|?|?|?|
+|Step|Model|Hyperparameter Modified|Kaggle Score|
+|--|--|--|--|
+||?|?|?|
+|add_features|?|?|?|
+|hpo|?|?|?|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
 
