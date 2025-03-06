@@ -25,7 +25,7 @@ If given more time, I’d focus primarily on deeper feature engineering, particu
 ### Create a table with the models you ran, the hyperparameters modified, and the kaggle score.
 |Step|Model|Hyperparameter Modified|Kaggle Score|
 |--|--|--|--|
-||?|?|?|
+|1|Initial AutoGluon|None (default, best_quality preset, 10 min)|1.80574|
 |add_features|?|?|?|
 |hpo|?|?|?|
 
