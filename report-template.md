@@ -26,7 +26,7 @@ If given more time, I’d focus primarily on deeper feature engineering, particu
 |Step|Model|Hyperparameter Modified|Kaggle Score|
 |--|--|--|--|
 |1|Initial AutoGluon|None (default, best_quality preset, 10 min)|1.80574|
-|add_features|?|?|?|
+|2|AutoGluon + basic feature engineering|Extracted datetime features (hour, day, month, dayofweek)|0.69776|
 |hpo|?|?|?|
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
