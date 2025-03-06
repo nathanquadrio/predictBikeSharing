@@ -6,7 +6,7 @@
 Before submission, I verified the predictions using ```predictions.describe()``` and confirmed that there were no negative values. As a result, no adjustments were needed to the output. Each submission successfully received a score from Kaggle.
 
 ### What was the top ranked model that performed?
-TODO: Add your explanation
+The top-ranked model was an advanced stacking ensemble combining optimized versions of LightGBM, XGBoost, and CatBoost, trained after extensive feature engineering (including time-based and categorical interactions), hyperparameter tuning with Bayesian Optimization, and log transformation of the target variable (log1p(count)). This model achieved the best Kaggle score, substantially outperforming all previous models due to its ability to leverage diverse model strengths and accurately capture complex relationships in the dataset.
 
 ## Exploratory data analysis and feature creation
 ### What did the exploratory analysis find and how did you add additional features?
@@ -31,19 +31,11 @@ If given more time, I’d focus primarily on deeper feature engineering, particu
 |4|Manual Weighted Ensemble|Individual tuning of LightGBM, XGBoost, CatBoost; manual weighted ensemble (0.4 * lgb) + (0.3 * cat) + (0.3 * xgb)|0.54853|
 |5|Advanced Stacking Ensemble|Additional feature engineering, log-transform target, extensive Bayesian Optimization, stacking ensemble (LightGBM, CatBoost, XGBoost)|0.40352|
 
-
-
-### Create a line plot showing the top model score for the three (or more) training runs during the project.
-
-TODO: Replace the image below with your own.
+### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
 
 ![model_train_score.png](img/model_train_score.png)
 
-### Create a line plot showing the top kaggle score for the three (or more) prediction submissions during the project.
-
-TODO: Replace the image below with your own.
-
-![model_test_score.png](img/model_test_score.png)
-
 ## Summary
-TODO: Add your explanation
+Throughout this project, incremental improvements significantly enhanced the model’s performance. Initially, using AutoGluon without feature engineering yielded a Kaggle RMSLE score of 1.80574. Adding basic datetime features substantially reduced the score to 0.69776. Further tuning of hyperparameters through Bayesian Optimization improved performance to 0.49311. Ultimately, applying advanced feature engineering (including rush hour indicators, weekend flags, temperature and humidity categories), log-transforming the target variable, comprehensive hyperparameter tuning, and employing a sophisticated stacking ensemble achieved the best result of 0.40352.
+
+These progressive enhancements illustrate the critical importance of thoughtful feature engineering, robust hyperparameter tuning, and leveraging diverse ensemble strategies to capture complex patterns within data effectively.
