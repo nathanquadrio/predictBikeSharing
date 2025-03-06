@@ -8,7 +8,7 @@ from skopt import BayesSearchCV                         # type: ignore
 from sklearn.ensemble import StackingRegressor          # type: ignore
 from sklearn.linear_model import Ridge                  # type: ignore
 
-# Code used to complete step 4 and achieve the Kaggle score of 0.40352
+# Code used to complete step 5 and achieve the Kaggle score of 0.40352
 
 # Load data
 train = pd.read_csv("~/Documents/AWS_MLEngineering/project/input/train.csv", parse_dates=['datetime'])
