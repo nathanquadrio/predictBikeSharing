@@ -28,6 +28,9 @@ If given more time, I’d focus primarily on deeper feature engineering, particu
 |1|Initial AutoGluon|None (default, best_quality preset, 10 min)|1.80574|
 |2|AutoGluon + basic feature engineering|Extracted datetime features (hour, day, month, dayofweek)|0.69776|
 |3|AutoGluon Hyperparameter Tuning|GBM (num_boost_round=100), XGB (n_estimators=100, learning_rate=0.05), CAT (iterations=200), NN_TORCH (num_epochs=20), Bayesian Optimization, 20 min runtime|0.49311|
+|4|Manual Weighted Ensemble|Individual tuning of LightGBM, XGBoost, CatBoost; manual weighted ensemble (0.4 * lgb) + (0.3 * cat) + (0.3 * xgb)|0.54853|
+|5|Advanced Stacking Ensemble|Additional feature engineering, log-transform target, extensive Bayesian Optimization, stacking ensemble (LightGBM, CatBoost, XGBoost)|0.40352|
+
 
 
 ### Create a line plot showing the top model score for the three (or more) training runs during the project.
